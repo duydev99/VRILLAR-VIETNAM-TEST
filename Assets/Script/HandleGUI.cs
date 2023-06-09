@@ -25,8 +25,8 @@ public class HandleGUI : MonoBehaviour
 
     public virtual void OnChangeKinhDo()
     {
-        if (float.Parse(inputKinhDo.text) < 0f)
-            inputKinhDo.text = "0";
+        if (float.Parse(inputKinhDo.text) < -180f)
+            inputKinhDo.text = "-180";
 
         if(float.Parse(inputKinhDo.text) > 180f)
             inputKinhDo.text = "180";
@@ -34,8 +34,8 @@ public class HandleGUI : MonoBehaviour
 
     public virtual void OnChangeViDo()
     {
-        if (float.Parse(inputViDo.text) < 0f)
-            inputViDo.text = "0";
+        if (float.Parse(inputViDo.text) < -180f)
+            inputViDo.text = "-180";
 
         if (float.Parse(inputViDo.text) > 180f)
             inputViDo.text = "180";
